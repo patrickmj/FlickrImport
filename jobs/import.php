@@ -395,8 +395,8 @@ class FlickrImport_ImportJob extends Omeka_Job_AbstractJob
 
     $maps = array(
 		  "Dublin Core"=>array(
-				       'Title'=>array($photoInfo['title']),
-				       'Description'=>array($photoInfo['description']),
+				       'Title'=>array($photoInfo['title']['_content']),
+				       'Description'=>array($photoInfo['description']['_content']),
 				       'Date'=>array($date),
 				       'Rights'=>array($licenses[$photoInfo['license']])
 				       )
